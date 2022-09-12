@@ -9,6 +9,7 @@ bkg color3 #2F303A
 
 */
 
+
 :root {
   --color-primary: #212121;
   --color-secondary: #757575;
@@ -19,6 +20,16 @@ bkg color3 #2F303A
   --bckg-dark: #2f303a;
   --bckg-button: #f5f4fa;
 }
+
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
 
 a {
   text-decoration: none;
