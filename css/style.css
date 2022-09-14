@@ -9,7 +9,6 @@ bkg color3 #2F303A
 
 */
 
-
 :root {
   --color-primary: #212121;
   --color-secondary: #757575;
@@ -21,15 +20,14 @@ bkg color3 #2F303A
   --bckg-button: #f5f4fa;
 }
 
-html{
+html {
   box-sizing: border-box;
 }
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
-
 
 a {
   text-decoration: none;
@@ -42,7 +40,43 @@ body {
   background-color: var(--bckg-primary);
 }
 
+.section {
+}
+.section.bckg-primary {
+  background-color: var(--bckg-primary);
+}
+.section.bckg-secondary {
+  background-color: var(--bckg-secondary);
+}
+.section.bckg-dark {
+  background-color: var(--bckg-dark);
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  outline: tomato solid 2px;
+}
+.container.margin-bottom {
+  margin-bottom: 94px;
+}
+.container.centered {
+  text-align: center;
+}
+.container.our-command {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-bottom: 0;
+}
+.container.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .logo {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -61,13 +95,13 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
 
 .list-no-hilights {
   list-style: none;
 }
-
 
 .list :visited {
   color: inherit;
@@ -93,17 +127,18 @@ body {
 }
 
 .hero {
-}
-
-.sections-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .hero-header {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 0 auto;
+  width: 696px;
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -114,7 +149,24 @@ body {
   color: #ffffff;
 }
 
+.sections-header {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.sections-header.invisible {
+  display: none;
+}
+
 .features-headers {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -123,6 +175,8 @@ body {
 }
 
 .features-text {
+  margin: 0;
+  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -132,9 +186,13 @@ body {
 
 .list-untouch {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .our-command-header {
+  margin: 30px 0 10px 0;
+  padding: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -142,6 +200,8 @@ body {
 }
 
 .our-command-text {
+  margin: 0;
+  padding: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -150,6 +210,8 @@ body {
 }
 
 .portfolio-headers {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -158,6 +220,8 @@ body {
 }
 
 .portfolio-text {
+  margin: 0;
+  padding: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
@@ -166,6 +230,8 @@ body {
 }
 
 .footer-ref {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
@@ -182,6 +248,8 @@ body {
 }
 
 .footer-address {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   font-style: normal;
   color: #ffffff;
@@ -204,8 +272,17 @@ body {
 }
 
 .button {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
-  border: none;
+  min-width: 216px;
+  height: 50px;
+  /*border-color: transparent;*/
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
