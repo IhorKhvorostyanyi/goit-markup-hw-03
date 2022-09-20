@@ -21,29 +21,35 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="body">
-    <header class="section bckg-primary">
-      <div class="container header">
+    <header class="hdr">
+      <div class="menu">
         <nav class="nav">
           <a class="logo top" href="./index.html"
             ><span class="logo-begin">Web</span
             ><span class="logo-end-black">Studio</span></a
           >
-          <ul class="list header-style">
+          <ul class="list">
             <li class="item">
-              <a style="color: #2196f3" href="./index.html"> Студія</a>
+              <a class="link" style="color: #2196f3" href="./index.html">
+                Студія</a
+              >
             </li>
-            <li class="item"><a href="./portfolio.html"> Портфоліо</a></li>
-            <li class="item"><a href=""> Контакти</a></li>
+            <li class="item">
+              <a class="link" href="./portfolio.html"> Портфоліо</a>
+            </li>
+            <li class="item">
+              <a class="link" href=""> Контакти</a>
+            </li>
           </ul>
         </nav>
-        <ul class="list header-style">
+        <ul class="list">
           <li class="item">
-            <a class="header-contacts" href="mailto:info@devstudio.com"
+            <a class="link header-contacts" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a class="header-contacts" href="tel:+380961111111"
+            <a class="link header-contacts" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
@@ -51,41 +57,41 @@
       </div>
     </header>
     <main>
-      <section class="section bckg-dark">
-        <div class="container centered margin-bottom">
+      <section class="hero">
+        <div class="face">
           <h1 class="hero-header">Ефективні рішення для<br />вашого бізнесу</h1>
           <button class="button" type="button">Замовити послугу!</button>
         </div>
       </section>
-      <section class="section bckg-primary">
-        <div class="container margin-bottom">
+      <section class="features">
+        <div class="description">
           <h2 class="sections-header invisible">
             Заголовок секції, який буде скрито
           </h2>
-          <ul class="list-untouch features">
+          <ul class="list">
             <li class="item">
-              <h3 class="features-headers">Увага до деталей</h3>
-              <p class="features-text">
+              <h3 class="feature-header">Увага до деталей</h3>
+              <p class="feature-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
             <li class="item">
-              <h3 class="features-headers">Пунктуальність</h3>
-              <p class="features-text">
+              <h3 class="feature-header">Пунктуальність</h3>
+              <p class="feature-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
             <li class="item">
-              <h3 class="features-headers">Планування</h3>
-              <p class="features-text">
+              <h3 class="feature-header">Планування</h3>
+              <p class="feature-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="item">
-              <h3 class="features-headers">Сучасні технології</h3>
-              <p class="features-text">
+              <h3 class="feature-header">Сучасні технології</h3>
+              <p class="feature-text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -93,10 +99,10 @@
           </ul>
         </div>
       </section>
-      <section class="section bckg-primary">
-        <div class="container margin-bottom">
+      <section class="directions">
+        <div class="presentation">
           <h2 class="sections-header">Чим ми займаємося</h2>
-          <ul class="list-untouch our-works">
+          <ul class="list">
             <li class="item">
               <img
                 src="./images/what-we-do-1.jpg"
@@ -121,52 +127,56 @@
           </ul>
         </div>
       </section>
-      <section class="section bckg-secondary">
-        <div class="container command">
+      <section class="command">
+        <div class="gallery">
           <h2 class="sections-header">Наша команда</h2>
-          <ul class="list-untouch our-command">
+          <ul class="command list">
             <li class="item">
               <img
                 src="./images/photo-product-designer-igor-demyanenko.jpg"
                 alt="photo product designer Igor Demyanenko"
                 width="270"
+                height="260"
               />
-              <h3 class="our-command-header">Ігор Дем'яненко</h3>
-              <p class="our-command-text">Product Designer</p>
+              <h3 class="command-header">Ігор Дем'яненко</h3>
+              <p class="command-text">Product Designer</p>
             </li>
             <li class="item">
               <img
                 src="./images/photo-frontend-developer-olga-repina.jpg"
                 alt="photo frontend developer Olga Repina"
                 width="270"
+                height="260"
               />
-              <h3 class="our-command-header">Ольга Рєпіна</h3>
-              <p class="our-command-text">Frontend Developer</p>
+              <h3 class="command-header">Ольга Рєпіна</h3>
+              <p class="command-text">Frontend Developer</p>
             </li>
             <li class="item">
               <img
                 src="./images/photo-marketing-mykola-tarasov.jpg"
                 alt="photo marketing Mykola Tarasov"
                 width="270"
+                height="260"
               />
-              <h3 class="our-command-header">Микола Тарасов</h3>
-              <p class="our-command-text">Marketing</p>
+              <h3 class="command-header">Микола Тарасов</h3>
+              <p class="command-text">Marketing</p>
             </li>
             <li class="item">
               <img
                 src="./images/photo-ui-designer-mykhaylo-yermakov.jpg"
                 alt="photo ui-designer Mykhaylo Yermakov"
                 width="270"
+                height="260"
               />
-              <h3 class="our-command-header">Михайло Єрмаков</h3>
-              <p class="our-command-text">UI Designer</p>
+              <h3 class="command-header">Михайло Єрмаков</h3>
+              <p class="command-text">UI Designer</p>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="section bckg-dark">
-      <div class="container footer">
+    <footer class="ftr">
+      <div class="board">
         <a class="logo" href="#"
           ><span class="logo-begin">Web</span
           ><span class="logo-end-white">Studio</span></a

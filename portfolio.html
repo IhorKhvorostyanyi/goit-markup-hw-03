@@ -21,56 +21,64 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="body">
-    <header class="section bckg-primary">
-      <div class="container">
+    <header class="hdr portfolio">
+      <div class="menu">
         <nav class="nav">
-          <a class="logo" href="./index.html"
+          <a class="logo top" href="./index.html"
             ><span class="logo-begin">Web</span
             ><span class="logo-end-black">Studio</span></a
           >
-          <ul class="list header-style">
-            <li><a href="./index.html"> Студія</a></li>
-            <li>
-              <a style="color: #2196f3" href="./portfolio.html"> Портфоліо</a>
+          <ul class="list">
+            <li class="item">
+              <a class="link" style="color: #2196f3" href="./index.html"> Студія</a>
             </li>
-            <li><a href=""> Контакти</a></li>
+            <li class="item">
+              <a class="link" href="./portfolio.html"> Портфоліо</a>
+            </li>
+            <li class="item">
+              <a class="link" href=""> Контакти</a>
+            </li>
           </ul>
         </nav>
-        <ul class="list header-style">
-          <li>
-            <a class="header-contacts" href="mailto:info@devstudio.com"
+        <ul class="list">
+          <li class="item">
+            <a class="link header-contacts" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="header-contacts" href="tel:+380961111111"
+          <li class="item">
+            <a class="link header-contacts" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
       </div>
     </header>
-    <hr class="h-line" />
+    <!-- <hr class="h-line" /> -->
     <main>
-      <section class="section bckg-primary">
-        <div class="container margin-bottom">
+      <section class="works">
+        <div class="gallery">
           <h1 class="sections-header invisible">Цей заголовок буде скрито.</h1>
-          <ul class="list portfolio-margin">
-            <li><button class="button-portfolio" type="button">Усі</button></li>
-            <li>
-              <button class="button-portfolio" type="button">Веб-сайти</button>
-            </li>
-            <li>
-              <button class="button-portfolio" type="button">Додатки</button>
-            </li>
-            <li>
-              <button class="button-portfolio" type="button">Дизайн</button>
-            </li>
-            <li>
-              <button class="button-portfolio" type="button">Маркетинг</button>
-            </li>
-          </ul>
-          <ul class="list no-hilights">
+ 
+            <ul class="list-filter">
+              <li class="item">
+                <button  class="button" type="button">Усі</button>
+              </li>
+              <li class="item">
+                <button class="button"  type="button">Веб-сайти</button>
+              </li>
+              <li class="item">
+                <button  class="button" type="button">Додатки</button>
+              </li>
+              <li class="item">
+                <button  class="button" type="button">Дизайн</button>
+              </li>
+              <li class="item">
+                <button  class="button" type="button">Маркетинг</button>
+              </li>
+            </ul>
+
+           <ul class="list portfolio">
             <li>
               <a href="">
                 <img src="./images/technokryak.jpg" alt="technokryak" />
@@ -173,8 +181,8 @@
       </section>
     </main>
 
-    <footer class="section bckg-dark">
-      <div class="container footer">
+    <footer class="ftr">
+      <div class="board">
         <a class="logo" href="./index.html"
           ><span class="logo-begin">Web</span
           ><span class="logo-end-white">Studio</span></a
